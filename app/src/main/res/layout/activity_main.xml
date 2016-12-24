@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.zach.scorekeeper.MainActivity"
+    android:scrollIndicators="none">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:scrollbars="none"
+        android:id="@+id/playersScroll"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/players">
+            <!--android:gravity="center"
+            android:layout_gravity="center"-->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/player"
+        android:layout_below="@+id/playersScroll">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectedPlayerName"
+                android:layout_gravity="center_horizontal"
+                android:textSize="72dp"
+                android:textAlignment="center"
+                android:layout_weight=".18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/selectedPlayerScore"
+                android:layout_weight=".18"
+                android:textSize="72dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number|numberSigned"
+                android:ems="10"
+                android:id="@+id/pointsToAdd"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textSize="72dp"
+                android:layout_weight=".18" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_points"
+                android:id="@+id/addPoints"
+                android:layout_gravity="center_horizontal"
+                android:textSize="36dp"
+                android:layout_weight=".18" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

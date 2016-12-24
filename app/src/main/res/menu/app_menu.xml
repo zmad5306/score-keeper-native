@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/newGameMenuItem"
+        android:title="@string/new_game"
+        app:showAsAction="ifRoom"
+        android:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource" />
+    <item android:id="@+id/addPlayerMenuItem"
+        android:title="@string/add_player"
+        app:showAsAction="ifRoom"
+        android:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource" />
+
+</menu>

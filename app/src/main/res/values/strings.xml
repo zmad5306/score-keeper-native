@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="new_game">New Game</string>
+    <string name="add_player">Add Player</string>
+    <string name="help">Help</string>
+    <string name="zero">0</string>
+    <string name="confirm_new_game">Are you sure?</string>
+    <string name="positive">Yes</string>
+    <string name="negative">No</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="empty"></string>
+    <string name="number_too_big">The score you entered was too large. Try again.</string>
+    <string name="add_points">Add Points</string>
+    <string name="enter_player_name">Enter player name</string>
+    <string name="player_added">Player %s added.</string>
+    <string name="player_deleted">Player %s deleted.</string>
+    <string name="remove_player">Remove Player</string>
+    <string name="confirm_delete_player">Delete %s?</string>
+    <string name="add_another">Add another player?</string>
+</resources>
